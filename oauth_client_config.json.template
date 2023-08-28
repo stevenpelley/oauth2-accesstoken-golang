@@ -1,0 +1,10 @@
+{
+    "ClientID": "12345",
+    "ClientSecret": "abcd1234",
+    "Scopes": ["read"],
+    "Endpoint": {
+        "AuthURL":  "https://www.strava.com/oauth/authorize",
+        "TokenURL": "https://www.strava.com/oauth/token"
+    },
+    "RedirectURL": "http://localhost:8080"
+}
