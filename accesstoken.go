@@ -185,7 +185,7 @@ func listenAndServeOauthRedirection(listener net.Listener, conf *oauth2.Config) 
 
 		// we write this to stdout so that it can be redirected to a file
 		// and stored for future use
-		file, err := os.OpenFile("token.txt",
+		file, err := os.OpenFile("token.json",
 			os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0666)
 		if err != nil {
 			slog.Error("error opening token.txt file to write token", "error", err)
